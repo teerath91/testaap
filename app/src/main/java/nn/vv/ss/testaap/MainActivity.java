@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.ViewGroup;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         AttributeSet attribs = null;
         int defaultStyle = 0;
 
-        Exerciser exerciser = new TestExerciser(this);
+        Exerciser exerciser = new TestExerciser(this, (ViewGroup) findViewById(R.id.rootView));
 
         for(int i=0; i<this.rounds; i++) {
             exerciser.exercise();

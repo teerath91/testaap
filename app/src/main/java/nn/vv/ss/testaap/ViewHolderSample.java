@@ -30,12 +30,11 @@ public abstract class ViewHolderSample extends BaseAdapter {
         return 0;
     }
 
-    LayoutInflater mInflater;
     Context context;
 
     public static class Adapter3 extends ViewHolderSample {
         public Adapter3(Context context) {
-            context = context;
+            this.context = context;
         }
 
         @Override
@@ -60,13 +59,4 @@ public abstract class ViewHolderSample extends BaseAdapter {
 
         return convertView;
     }*/
-
-    private static class R {
-        public static class layout {
-            public static final int your_layout = 2;
-        }
-        public static class id {
-            public static final int text = 2;
-        }
-    }
 }
